@@ -60,3 +60,27 @@ def Size():
         sql = "INSERT INTO `sizes` (`SNumber`) VALUES (%s)"
         cursor.execute(sql, ('size: {}'.format(line)))
 ```
+
+<h3>Main Method</h3>
+
+```python
+with connection:
+    with connection.cursor() as cursor:
+
+        # reseting auto_increment to 0;
+        altercustomer = "ALTER TABLE customer AUTO_INCREMENT = 1"
+        altercolor = "ALTER TABLE color AUTO_INCREMENT = 1"
+        altersizes = "ALTER TABLE sizes AUTO_INCREMENT = 1"
+
+        cursor.execute(altercustomer)
+        cursor.execute(altercolor)
+        cursor.execute(altersizes)
+
+        #customers(500000)
+        #colors()
+        #Size()
+
+        print(Size())
+
+    connection.commit()
+```
