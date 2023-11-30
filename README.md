@@ -37,3 +37,26 @@ def customers(n):
         sql = "INSERT INTO `customer` (`Name`, `Contact`,`email`) VALUES (%s, %s, %s)"
         cursor.execute(sql, ('customer-{}'.format(x), '+{}'.format(random_with_N_digits(10)), 'user{}@yandex.ru'.format(x)))
 ```
+
+<p>Inserting colors into the <code>color_table</code> using colors from the colors.txt file</p>
+
+```python
+def colors():
+    a_file = open("colors.txt")
+    lines = a_file.readlines()
+
+    for line in lines:
+        sql = "INSERT INTO `color` (`Color_name`) VALUES (%s)"
+        cursor.execute(sql, ('{}'.format(line)))
+```
+<p>Inserting sizes into the <code>sizes_table</code> using sizes from the sizes.txt file</p>
+
+```python
+def Size():
+    a_file = open("sizes.txt")
+    lines = a_file.readlines()
+
+    for line in lines:
+        sql = "INSERT INTO `sizes` (`SNumber`) VALUES (%s)"
+        cursor.execute(sql, ('size: {}'.format(line)))
+```
