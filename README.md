@@ -60,7 +60,7 @@ def Size():
         sql = "INSERT INTO `sizes` (`SNumber`) VALUES (%s)"
         cursor.execute(sql, ('size: {}'.format(line)))
 ```
-
+<br/><br/>
 <h3>Main Method</h3>
 
 ```python
