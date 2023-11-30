@@ -1,11 +1,11 @@
 # Shoe_Store
 
-Requirement:
+<h3>Requirement:</h3>
 ``` python
 $ python3 -m pip install PyMySQL
 ```
 
-Libraries:
+<h3>Libraries:</h3>
 <p>pymysql.cursor for connecting to database <br/> randint used for generating random number</p>
 
 ```python
