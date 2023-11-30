@@ -27,5 +27,13 @@ def random_with_N_digits(n):
     range_start = 10 ** (n - 1)
     range_end = (10 ** n) - 1
     return randint(range_start, range_end)
+```
 
+<p>Inserting <code>n</code> rows into the customers table</p>
 
+```python
+def customers(n):
+    for x in range(n):
+        sql = "INSERT INTO `customer` (`Name`, `Contact`,`email`) VALUES (%s, %s, %s)"
+        cursor.execute(sql, ('customer-{}'.format(x), '+{}'.format(random_with_N_digits(10)), 'user{}@yandex.ru'.format(x)))
+```
