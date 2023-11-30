@@ -20,7 +20,7 @@ from random import randint
 ```python
 connection = pymysql.connect(host='localhost', user='root', password='', database='shoe_store', cursorclass=pymysql.cursors.DictCursor)
 ```
-<br/><br/>
+
 <h3>Methods</h3>
 <p>Generating random values with specified n digits</p>
 
@@ -63,8 +63,8 @@ def Size():
         cursor.execute(sql, ('size: {}'.format(line)))
 ```
 
-<br/><br/>
-<h3>Main Method</h3>
+
+<h3 style="margin-top:1em">Main Method</h3>
 
 ```python
 with connection:
