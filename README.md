@@ -5,7 +5,7 @@
 ``` python
 $ python3 -m pip install PyMySQL
 ```
-<br/><br/>
+
 <h3>Libraries:</h3>
 <p>- pymysql.cursor for connecting to database <br/>- randint used for generating random number</p>
 
@@ -14,7 +14,6 @@ import pymysql.cursors
 from random import randint
 ```
 
-<br/><br/>
 <h3>Connecting to DB</h3>
 
 ```python
@@ -64,7 +63,7 @@ def Size():
 ```
 
 
-<h3 style="margin-top:1em">Main Method</h3>
+<h3>Main Method</h3>
 
 ```python
 with connection:
