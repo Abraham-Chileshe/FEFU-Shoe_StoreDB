@@ -1,4 +1,6 @@
 # Shoe_Store
 
 Requirement:
-```$ python3 -m pip install PyMySQL
+``` python
+$ python3 -m pip install PyMySQL
+```
