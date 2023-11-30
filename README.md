@@ -5,7 +5,7 @@
 ``` python
 $ python3 -m pip install PyMySQL
 ```
-
+<br/><br/>
 <h3>Libraries:</h3>
 <p>- pymysql.cursor for connecting to database <br/>- randint used for generating random number</p>
 
@@ -13,12 +13,14 @@ $ python3 -m pip install PyMySQL
 import pymysql.cursors
 from random import randint
 ```
+
+<br/><br/>
 <h3>Connecting to DB</h3>
 
 ```python
 connection = pymysql.connect(host='localhost', user='root', password='', database='shoe_store', cursorclass=pymysql.cursors.DictCursor)
 ```
-
+<br/><br/>
 <h3>Methods</h3>
 <p>Generating random values with specified n digits</p>
 
@@ -60,6 +62,7 @@ def Size():
         sql = "INSERT INTO `sizes` (`SNumber`) VALUES (%s)"
         cursor.execute(sql, ('size: {}'.format(line)))
 ```
+
 <br/><br/>
 <h3>Main Method</h3>
 
